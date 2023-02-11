@@ -1,5 +1,4 @@
 #!/bin/bash
-# adapted from (http://www.pyrosoft.co.uk/blog/2006/10/18/show-grants-for-all-users-on-mysql/)
 mkdir -p mysqlalldump
 (
  mysql --batch --skip-column-names -e "SHOW DATABASES;" mysql
