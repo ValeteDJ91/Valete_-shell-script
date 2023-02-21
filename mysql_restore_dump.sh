@@ -8,5 +8,5 @@ then
     echo "# Restoring $File"
   done
 else
-    echo "No mysqlalldump folder detected"
+    echo "No mysqlalldump folder found"
 fi
