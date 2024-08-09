@@ -1,0 +1,1 @@
+﻿Get-ADOrganizationalUnit -Filter 'Name -like "Lille"' | ForEach-Object { Get-ADUser -Filter * -SearchBase $_ | Select-object Name,UserPrincipalName | Export-CSV "C:\temp\Tourcoing.csv" -NoTypeInformation -Encoding UTF8 -Delimiter ";" -Append }
